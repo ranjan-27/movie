@@ -4,7 +4,7 @@ let searchBtn = document.getElementById("searchBtn");
 
 const getData = async (movie) => {
     try {
-        let fetchData = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(movie)}&apikey=${2bbd728a}`);
+        let fetchData = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(movie)}&apikey=${APIKey}`);
         let jsonData = await fetchData.json();
 
         // Check if the response is valid
